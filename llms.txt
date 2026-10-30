@@ -1,0 +1,22 @@
+# Quantum Markov Stability
+
+This repository proves exponential spatial conditional mutual information for one-dimensional open/infinite chains prepared from uniformly full-rank product states by bounded-depth, bounded-range, uniformly faithful local CPTP circuits. The local environments are independent. The spectral floors, dimensions, range and depth are uniform in system size.
+
+## Authoritative routes
+
+- Orientation and headline theorem: README.md; science/README.md.
+- Exact model, quantifiers, notation and result: science/model.md.
+- Positive resource component and inherited conditional contraction: science/contraction.md.
+- Structural gate DAG, ancestor closure and exact nonunitary regrouping: science/circuit-regrouping.md.
+- Iteration, arbitrary cuts, short buffers, two-sided shields and infinite limits: science/spatial-decay.md.
+- Unital, amplitude-damping, weak-channel and finite local Lindblad examples: science/examples-and-limits.md.
+- Closest prior results, inherited ingredients and comparison limits: references/comparison.md; references/sources.md.
+- Reproducible finite checks, dependencies and negative controls: verification/README.md; verification/verify.py.
+
+## Essential distinctions
+
+Faithfulness is Phi(I) >= alpha I; it is not full Choi rank of a physical gate. The resource contraction is inherited, and a physical sequential output channel may transmit its incoming memory perfectly to an emitted register. Apply the conditional Doeblin argument to the internal resource channel as explained in the proof.
+
+The theorem is a preparation statement. Full rank of arbitrary output marginals alone is insufficient. The quantitative constants are conservative uniform bounds, not optimal lengths. Correlated interacting Gibbs inputs, postselection, shared nonlocal randomness, unmodeled environment memory, periodic rings, higher dimensions and exact extensive continuous-time dynamics are outside the theorem.
+
+Scientific proofs live in the topic-based science pages. Finite numerical checks do not replace those proofs. Literature comparisons state the actual inspected hypotheses and any access limitation; do not upgrade them into an exhaustive priority claim.

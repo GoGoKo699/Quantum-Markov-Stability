@@ -1,0 +1,99 @@
+{
+  "absolute_tolerance": 5e-09,
+  "contraction": {
+    "cases": 72,
+    "maximum_bound_excess": 1.3322676295501878e-15,
+    "maximum_internal_leg_reconstruction_error": 2.855954498757788e-15,
+    "maximum_output_cmi": 0.09129207213914414,
+    "maximum_trace_preservation_error": 1.7763568394002505e-15,
+    "minimum_resource_p": 0.005382642749012074,
+    "nonzero_output_cmi_cases": 21,
+    "unequal_marginal_negative_control_cmi": 0.6931471805599452,
+    "zero_input_cmi_cases": 8
+  },
+  "elapsed_seconds": 1.536,
+  "entropy_units": "nats",
+  "limitation": "Finite numerical and combinatorial checks do not prove the universal theorem.",
+  "nonunitary_circuit_equality": {
+    "cases": 2,
+    "maximum_frobenius_difference": 1.4319221198614132e-16,
+    "naive_geometric_grouping_choi_difference": 0.5032462821293522,
+    "whole_channel_choi_cases": 1
+  },
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "seed": 20261030,
+  "spatial_cmi": {
+    "bell_chain_cases": 9,
+    "examples": [
+      {
+        "analytic_cmi": 0.002340195831377123,
+        "cmi": 0.002340195831377123,
+        "links": 2,
+        "visibility": 0.2
+      },
+      {
+        "analytic_cmi": 9.549507126815904e-05,
+        "cmi": 9.549507126838108e-05,
+        "links": 3,
+        "visibility": 0.2
+      },
+      {
+        "analytic_cmi": 3.8359154375111615e-06,
+        "cmi": 3.835915437733206e-06,
+        "links": 4,
+        "visibility": 0.2
+      },
+      {
+        "analytic_cmi": 0.22628212517078783,
+        "cmi": 0.22628212517078783,
+        "links": 2,
+        "visibility": 0.65
+      },
+      {
+        "analytic_cmi": 0.09935029312851595,
+        "cmi": 0.0993502931285164,
+        "links": 3,
+        "visibility": 0.65
+      },
+      {
+        "analytic_cmi": 0.04348549607399965,
+        "cmi": 0.043485496074000096,
+        "links": 4,
+        "visibility": 0.65
+      },
+      {
+        "analytic_cmi": 0.8202662269879197,
+        "cmi": 0.8202662269879193,
+        "links": 2,
+        "visibility": 0.9
+      },
+      {
+        "analytic_cmi": 0.6581264081236751,
+        "cmi": 0.6581264081236746,
+        "links": 3,
+        "visibility": 0.9
+      },
+      {
+        "analytic_cmi": 0.5320594628398961,
+        "cmi": 0.5320594628398947,
+        "links": 4,
+        "visibility": 0.9
+      }
+    ],
+    "geometry_inequalities": 139,
+    "maximum_analytic_cmi_error": 1.4432899320127035e-15,
+    "maximum_distant_endpoint_mutual_information": 1.7763568394002505e-15,
+    "maximum_geometry_bound_excess": 1.7763568394002505e-15
+  },
+  "status": "all finite checks passed",
+  "structural_regrouping": {
+    "cases": 320,
+    "distinct_short_end_block_sizes": 85,
+    "gates": 92106,
+    "largest_input_cone_span": 46,
+    "naive_geometric_grouping_rejected": true,
+    "noncontiguous_support_gates": 33569,
+    "second_coarse_layer_gates": 4871
+  }
+}
