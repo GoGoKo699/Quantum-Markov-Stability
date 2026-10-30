@@ -8,11 +8,11 @@ The result in [model.md](../science/model.md) concerns a product input with a un
 
 Its quantitative input is
 
-$$
+```math
 \omega_x\ge\delta I_x,\qquad
 \Phi_g(I)\ge\alpha I,\qquad
-K=4Dr+1,\qquad p_0=\delta^K\alpha^{KD}>0.
-$$
+K=4Dr+1,\qquad p_0=\delta^K\alpha^{KD}\gt 0.
+```
 
 The proposed addition is an exact reduction from this physical preparation model to independent bounded-size faithful resources, followed by a uniform spatial CMI bound. Conditional contraction and its sequential iteration are established tools. The reduction, its environmental assumptions, and its uniform dimension and eigenvalue bounds are therefore the essential parts to check when assessing the result's relation to previous work.
 
@@ -22,24 +22,24 @@ The proposed addition is an exact reduction from this physical preparation model
 
 [CKB23](sources.md#ckb23) Proposition III.2 assumes a Y-shaped channel with a completely positive convex decomposition
 
-$$
-N=(1-\eta)F+\eta N',\qquad F(X)=\operatorname{Tr}(X)\sigma,
-\quad 0\le\eta<1.
-$$
+```math
+N=(1-\eta)F+\eta N',\qquad F(X)=\mathrm{Tr}(X)\sigma,
+\quad 0\le\eta\lt 1.
+```
 
-It proves conditional-memory contraction and exponential CMI decay upon iteration. This is a direct predecessor of the information-forgetting mechanism used here. The cited hypothesis is the channel decomposition in **PDF Eq. (38)** (HTML Eq. (53)), rather than an informal assertion that a channel has positive outputs. A physical gate satisfying only $\Phi(I)>0$ need not possess such a replacement component: a unitary gate already distinguishes these conditions. A reduction establishing an appropriate internal channel remains necessary.
+It proves conditional-memory contraction and exponential CMI decay upon iteration. This is a direct predecessor of the information-forgetting mechanism used here. The cited hypothesis is the channel decomposition in **PDF Eq. (38)** (HTML Eq. (53)), rather than an informal assertion that a channel has positive outputs. A physical gate satisfying only $`\Phi(I)\gt 0`$ need not possess such a replacement component: a unitary gate already distinguishes these conditions. A reduction establishing an appropriate internal channel remains necessary.
 
 ### Hirche–George–Nuradha–Wilde: conditional Doeblin bounds and chains
 
 [HGNW26](sources.md#hgnw26) Proposition 2 and Corollary 1 imply
 
-$$
+```math
 \eta_{\mathrm{CMI}}(T)\le 1-\alpha_+(T),
-$$
+```
 
-where $\alpha_+(T)$ is the largest CP replacement weight. Section 7.2 already gives nonstationary sequential-chain CMI bounds; Propositions 23–24 turn a uniform Choi eigenvalue floor into exponential decay. Neither conditional contraction nor chain iteration is claimed here as a new general principle.
+where $`\alpha_+(T)`$ is the largest CP replacement weight. Section 7.2 already gives nonstationary sequential-chain CMI bounds; Propositions 23–24 turn a uniform Choi eigenvalue floor into exponential decay. Neither conditional contraction nor chain iteration is claimed here as a new general principle.
 
-The channel to which this machinery applies in the circuit proof is the internal channel $T_{V\to R}$ obtained by normalizing the marginal of a faithful resource $\sigma_{LMR}$. It is not automatically the whole physical step that emits $YM$ while retaining $R$. That step can send its input perfectly into $Y$, giving whole-output contraction coefficient one. The resource argument and the chain rule connect internal contraction to the desired retained-memory estimate; applying Proposition 24 directly to every physical step would omit this distinction.
+The channel to which this machinery applies in the circuit proof is the internal channel $`T_{V\to R}`$ obtained by normalizing the marginal of a faithful resource $`\sigma_{LMR}`$. It is not automatically the whole physical step that emits $`YM`$ while retaining $`R`$. That step can send its input perfectly into $`Y`$, giving whole-output contraction coefficient one. The resource argument and the chain rule connect internal contraction to the desired retained-memory estimate; applying Proposition 24 directly to every physical step would omit this distinction.
 
 ### Uniform matrix product states
 
@@ -74,7 +74,7 @@ The circuit theorem establishes stability for the **one-dimensional uniformly fu
 The proof should visibly separate three steps:
 
 1. **Inherited information inequality:** a CP replacement component yields complete conditional-information contraction; chain rules turn repeated contraction into spatial decay in an appropriate sequential representation. The preceding CKB23 and HGNW26 results are credited for this mechanism.
-2. **Circuit-specific reduction:** regroup the given fixed-depth DAG exactly into independent bounded-size resources and boundary maps, with spectral floor $p_0$. Neither full Choi rank of the physical gates nor a physical replacement component may be assumed.
+2. **Circuit-specific reduction:** regroup the given fixed-depth DAG exactly into independent bounded-size resources and boundary maps, with spectral floor $`p_0`$. Neither full Choi rank of the physical gates nor a physical replacement component may be assumed.
 3. **Spatial conclusion:** apply the internal resource channel estimate while retaining all emitted conditioning registers, and control arbitrary cuts, endpoint dimensions, and the line limits stated in the theorem.
 
 This comparison is a bounded review of the explicit results listed above, not an exhaustive priority certification. The outstanding full-text comparison with T26 is recorded rather than treated as resolved.

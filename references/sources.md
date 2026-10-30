@@ -20,7 +20,7 @@ Christoph Hirche, Ian George, Theshani Nuradha, and Mark M. Wilde, **“Conditio
 - [Versioned abstract](https://arxiv.org/abs/2608.27171v1)
 - [Versioned full text](https://arxiv.org/html/2608.27171v1)
 - Reviewed: Section 2.4, Propositions 1–2, Eqs. (2.36)–(2.37); Section 3.1, Corollary 1, Eq. (3.24) and its proof; Section 7.2, Propositions 21–24, Eqs. (7.47)–(7.58).
-- Normalization: Proposition 23 uses the **unnormalized** Choi operator. Its bound is $\alpha_+(N)\ge |B|\lambda_{\min}(\Gamma^N)$ for $N:A\to B$. The resource-marginal normalization in the circuit proof also constructs an unnormalized Choi operator; it should not be confused with division by the input dimension to obtain a Choi state.
+- Normalization: Proposition 23 uses the **unnormalized** Choi operator. Its bound is $`\alpha_+(N)\ge |B|\lambda_{\min}(\Gamma^N)`$ for $`N:A\to B`$. The resource-marginal normalization in the circuit proof also constructs an unnormalized Choi operator; it should not be confused with division by the input dimension to obtain a Choi state.
 
 ## SMK24
 
