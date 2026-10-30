@@ -6,20 +6,20 @@ Conditional mutual information measures the dependence between two regions after
 
 ## Main result
 
-Consider an open or infinite chain with site dimension at most $d$, product input $\bigotimes_x\omega_x$ satisfying $\omega_x\geq\delta I_x$, and a circuit with depth at most $D$ and gate range at most $r$. Gates in each layer have disjoint supports. Assume every local CPTP gate satisfies $\Phi_g(I)\geq\alpha I$, with positive $\delta$ and $\alpha$ uniform in position and system size.
+Consider an open or infinite chain with site dimension at most $`d\geq2`$, product input $`\bigotimes_x\omega_x`$ satisfying $`\omega_x\geq\delta I_x`$, and a circuit with depth at most $`D`$ and gate range at most $`r`$, where $`D,r\geq1`$. Gates in each layer have disjoint supports. Assume every local CPTP gate satisfies $`\Phi_g(I)\geq\alpha I`$, with $`0\lt \delta\leq1/d`$ and $`0\lt \alpha\leq1`$ uniform in position and system size.
 
 Set
 
-$$
+```math
 K=4Dr+1,\qquad p_0=\delta^K\alpha^{KD},
 \qquad m(b)=\max\{0,\lfloor b/K\rfloor-2\}.
-$$
+```
 
-For every consecutive tripartition $A:B:C$,
+For every consecutive tripartition $`A:B:C`$,
 
-$$
+```math
 I(A:C\mid B)\leq4Dr\log d\,(1-p_0)^{m(|B|)}.
-$$
+```
 
 The bound is uniform in the endpoint sizes and chain length, and applies to arbitrary physical cuts. For a region shielded on both sides, the corresponding CMI is bounded by the sum of the two one-sided bounds. The [complete theorem and proof](science/spatial-decay.md) include empty buffers, finite boundaries and the infinite-line limit. Logarithms are natural.
 
@@ -50,6 +50,10 @@ The [science overview](science/README.md) gives the connected proof route. [llms
 The full-rank assumption is a property of the **preparation**, together with independence of the local input factors and gate environments. It is not a criterion on arbitrary output marginals. The theorem covers ordinary finite-dimensional tensor-product site algebras on a line. It does not establish stability for correlated interacting Gibbs inputs, postselected evolution, shared global randomness, unmodeled environment memory, periodic rings, higher dimensions or exact extensive continuous-time evolution.
 
 The result permits strong faithful dissipation. Examples include arbitrary unital gates, partial amplitude damping with a uniform damping bound below complete reset, sufficiently small arbitrary CPTP perturbations of the identity, and finite-time bounded local Lindblad gates used in a fixed-depth circuit. Their spectral floors are derived in [examples and boundaries](science/examples-and-limits.md).
+
+## Learning route
+
+The educational anchor is Mark M. Wilde, _Quantum Information Theory_, second edition (2017). Start with the [learning overview](learning/README.md), use the [30-milestone map](learning/MILESTONES.md) to locate each concept in the argument, and follow the [Wilde-to-project bridge](learning/WILDE_BRIDGE.md) for notation, source sections, and worked examples. The map has 12 background milestones and 18 milestones for the proof, physical examples, and scope. The bridge makes the conversion from Wilde’s bits to the project’s nats explicit.
 
 ## Reproduce the finite checks
 

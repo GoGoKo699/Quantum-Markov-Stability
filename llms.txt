@@ -1,6 +1,6 @@
 # Quantum Markov Stability
 
-This repository proves exponential spatial conditional mutual information for one-dimensional open/infinite chains prepared from uniformly full-rank product states by bounded-depth, bounded-range, uniformly faithful local CPTP circuits. The local environments are independent. The spectral floors, dimensions, range and depth are uniform in system size.
+This repository proves exponential spatial conditional mutual information decay for one-dimensional open/infinite chains prepared from uniformly full-rank product states by bounded-depth, bounded-range, uniformly faithful local CPTP circuits. The local environments are independent. The spectral floors, dimensions, range and depth are uniform in system size.
 
 ## Authoritative routes
 
@@ -11,6 +11,9 @@ This repository proves exponential spatial conditional mutual information for on
 - Iteration, arbitrary cuts, short buffers, two-sided shields and infinite limits: science/spatial-decay.md.
 - Unital, amplitude-damping, weak-channel and finite local Lindblad examples: science/examples-and-limits.md.
 - Closest prior results, inherited ingredients and comparison limits: references/comparison.md; references/sources.md.
+- Learning orientation: learning/README.md.
+- Common 30-milestone conceptual map: learning/MILESTONES.md.
+- Wilde (2017), notation and bits-to-nats conversion, and worked examples: learning/WILDE_BRIDGE.md.
 - Reproducible finite checks, dependencies and negative controls: verification/README.md; verification/verify.py.
 
 ## Essential distinctions
